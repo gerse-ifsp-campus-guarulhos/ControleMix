@@ -1,6 +1,4 @@
-# ControleMix
-
-# **Resumo**
+# **ControleMix**
 
 O Controle Mix é uma placa dedicada para a construção, desenvolvimento e prototipagem de robôs autônomos ou controlado, o foco dela é para robôs voltados a competição (mas isso não impede que a mesma seja usada em outros robôs ou em outras aplicações )
 
