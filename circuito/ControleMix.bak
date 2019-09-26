@@ -1598,10 +1598,6 @@ F 3 "" H 7950 1700 50  0001 C CNN
 	1    7950 1700
 	-1   0    0    1   
 $EndComp
-Wire Notes Line
-	4400 3250 10700 3250
-Wire Notes Line
-	4400 800  10700 800 
 $Comp
 L Device:R_Network04 RN4
 U 1 1 5D8E88C8
@@ -1646,4 +1642,8 @@ Wire Wire Line
 Connection ~ 10300 2050
 Wire Wire Line
 	10300 2050 10700 2050
+Wire Notes Line
+	6600 3250 11000 3250
+Wire Notes Line
+	4400 800  11000 800 
 $EndSCHEMATC
