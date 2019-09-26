@@ -14,21 +14,33 @@ O circuito leva o [STM32F103C8T6](https://www.st.com/content/ccc/resource/techni
 
 
 * 10 entradas analogicas de 12 bits com divisor de tensão - 0V a 30V
+
 * 4 saídas acoplada por um [ULN2803A](https://www.st.com/en/interfaces-and-transceivers/uln2803a.html)   (todas PWM)
+
 * 4 Entradas acoplada por um  [ULN2803A](https://www.st.com/en/interfaces-and-transceivers/uln2803a.html)   (todas PWM)
+
 * Serial USART1
+
 * Serial USART3 / I2C2
+
 * Serial USB / CAN
+
 * Conector para mix de sinal do controle RF de até 6 canais
 
  
 ## **Notas para instalação e manipulação nos projetos:**
 
-sempre consulte o [esquema elétrico](./DOC/ControleMix.pdf).
-Ela tem aproximadamente 60mm por 60mm e contém 2 furos de fixação excêntrico e assimétricos.
-Aconselha se a utilizar de forma que o circuito não fique exposto, ela é utiliza  conectores [molex de passo 1.27mm](
+* sempre consulte o [esquema elétrico](./DOC/ControleMix.pdf).
+
+* Ela tem aproximadamente 60mm por 60mm e contém 2 furos de fixação excêntrico e assimétricos.
+
+* Aconselha se a utilizar de forma que o circuito não fique exposto, ela é utiliza  conectores [molex de passo 1.27mm](
 https://www.molex.com/molex/news/display_news.jsp?channel=New&channelId=0&oid=941
 )
-os resistores do divisor de divisão de tensão e os resistores de pull up são array de resistores embora pode ser facilmente substituídos por resistores comuns
+
+* Os resistores do divisor de divisão de tensão e os resistores de pull up são array de resistores embora pode ser facilmente substituídos por resistores comuns
+
+* Para desenho do projeto em [3D](./DOC/3D/) consulte o D do circuito 
+
 
 ![imagem 3d da pcb](./DOC/img/S01.png)
