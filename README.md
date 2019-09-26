@@ -43,4 +43,4 @@ https://www.molex.com/molex/news/display_news.jsp?channel=New&channelId=0&oid=94
 * Para desenho do projeto em [3D](./DOC/3D/) consulte o D do circuito 
 
 
-![imagem 3d da pcb](./DOC/img/S01.png)
+![imagem 3d da pcb](./DOC/img/Screenshot_20190926_120253.png)
