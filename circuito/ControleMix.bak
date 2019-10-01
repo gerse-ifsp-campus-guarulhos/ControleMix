@@ -1425,12 +1425,6 @@ F 3 "" H 1200 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
-	6600 3250 6600 800 
-Wire Notes Line
-	6350 3250 6350 800 
-Wire Notes Line
-	4400 800  4400 3250
-Wire Notes Line
 	2450 3300 4150 3300
 Wire Notes Line
 	2450 800  4150 800 
@@ -1446,8 +1440,6 @@ Wire Notes Line
 	700  3300 2200 3300
 Wire Notes Line
 	2200 3300 2200 800 
-Wire Notes Line
-	11000 3250 11000 800 
 $Comp
 L Device:D_ALT D2
 U 1 1 5DE1F9D1
@@ -1643,7 +1635,19 @@ Connection ~ 10300 2050
 Wire Wire Line
 	10300 2050 10700 2050
 Wire Notes Line
-	6600 3250 11000 3250
+	4400 800  6350 800 
 Wire Notes Line
-	4400 800  11000 800 
+	6600 800  11000 800 
+Wire Notes Line
+	4400 3300 6350 3300
+Wire Notes Line
+	6350 800  6350 3300
+Wire Notes Line
+	4400 800  4400 3300
+Wire Notes Line
+	6600 3300 11000 3300
+Wire Notes Line
+	6600 800  6600 3300
+Wire Notes Line
+	11000 800  11000 3300
 $EndSCHEMATC

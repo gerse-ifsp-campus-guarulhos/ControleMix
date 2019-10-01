@@ -1,4 +1,4 @@
-src/sysBase/adc.o: ../src/sysBase/adc.cpp ../inc/../inc/sysBase/adc.h \
+src/sysBase/adc.o: ../src/sysBase/adc.cpp ../inc/sysBase/adc.h \
  ../system/inc/cmsis/stm32f10x.h ../system/inc/cmsis/core_cm3.h \
  ../system/inc/cmsis/core_cmInstr.h ../system/inc/cmsis/cmsis_gcc.h \
  ../system/inc/cmsis/core_cmFunc.h ../system/inc/cmsis/system_stm32f10x.h \
@@ -25,9 +25,9 @@ src/sysBase/adc.o: ../src/sysBase/adc.cpp ../inc/../inc/sysBase/adc.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_tim.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_usart.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
- ../system/inc/stm32f1-stdperiph/misc.h ../inc/../inc/sysBase/gpio.h
+ ../system/inc/stm32f1-stdperiph/misc.h ../inc/sysBase/gpio.h
 
-../inc/../inc/sysBase/adc.h:
+../inc/sysBase/adc.h:
 
 ../system/inc/cmsis/stm32f10x.h:
 
@@ -89,4 +89,4 @@ src/sysBase/adc.o: ../src/sysBase/adc.cpp ../inc/../inc/sysBase/adc.h \
 
 ../system/inc/stm32f1-stdperiph/misc.h:
 
-../inc/../inc/sysBase/gpio.h:
+../inc/sysBase/gpio.h:

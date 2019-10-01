@@ -9,8 +9,8 @@
 #include <stm32f10x_gpio.h>
 #include <stm32f10x_rcc.h>
 #include <stm32f10x_tim.h>
-#include <../inc/sysBase/gpio.h>
-#include <../inc/sysBase/pwm.h>
+#include <sysBase/gpio.h>
+#include <sysBase/pwm.h>
 #include <system_stm32f10x.h>
 
 

@@ -12,8 +12,7 @@
 #define ADC_H_
 
 #include <stm32f10x.h>
-#include <../inc/sysBase/gpio.h>
-
+#include <sysBase/gpio.h>
 // pino fisico para ADCs
 #define ADC0_PIN	GPIOA0
 #define ADC1_PIN	GPIOA1

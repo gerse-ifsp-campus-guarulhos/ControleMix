@@ -25,9 +25,8 @@ src/sysBase/gpio.o: ../src/sysBase/gpio.cpp \
  ../system/inc/stm32f1-stdperiph/stm32f10x_spi.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_tim.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_usart.h \
- ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
- ../inc/../inc/sysBase/gpio.h ../inc/../inc/sysBase/iwdg.h \
- ../inc/../inc/sysBase/utility_timer.h
+ ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h ../inc/sysBase/gpio.h \
+ ../inc/sysBase/iwdg.h ../inc/sysBase/utility_timer.h
 
 ../system/inc/stm32f1-stdperiph/misc.h:
 
@@ -89,8 +88,8 @@ src/sysBase/gpio.o: ../src/sysBase/gpio.cpp \
 
 ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h:
 
-../inc/../inc/sysBase/gpio.h:
+../inc/sysBase/gpio.h:
 
-../inc/../inc/sysBase/iwdg.h:
+../inc/sysBase/iwdg.h:
 
-../inc/../inc/sysBase/utility_timer.h:
+../inc/sysBase/utility_timer.h:

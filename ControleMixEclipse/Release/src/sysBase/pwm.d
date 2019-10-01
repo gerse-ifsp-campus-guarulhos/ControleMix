@@ -25,8 +25,8 @@ src/sysBase/pwm.o: ../src/sysBase/pwm.cpp ../system/inc/cmsis/stm32f10x.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_tim.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_usart.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
- ../system/inc/stm32f1-stdperiph/misc.h ../inc/../inc/sysBase/gpio.h \
- ../inc/../inc/sysBase/pwm.h ../system/inc/cmsis/system_stm32f10x.h
+ ../system/inc/stm32f1-stdperiph/misc.h ../inc/sysBase/gpio.h \
+ ../inc/sysBase/pwm.h ../system/inc/cmsis/system_stm32f10x.h
 
 ../system/inc/cmsis/stm32f10x.h:
 
@@ -88,8 +88,8 @@ src/sysBase/pwm.o: ../src/sysBase/pwm.cpp ../system/inc/cmsis/stm32f10x.h \
 
 ../system/inc/stm32f1-stdperiph/misc.h:
 
-../inc/../inc/sysBase/gpio.h:
+../inc/sysBase/gpio.h:
 
-../inc/../inc/sysBase/pwm.h:
+../inc/sysBase/pwm.h:
 
 ../system/inc/cmsis/system_stm32f10x.h:

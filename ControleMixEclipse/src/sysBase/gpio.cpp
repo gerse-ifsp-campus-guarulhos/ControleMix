@@ -9,9 +9,9 @@
 #include <stm32f10x.h>
 #include <stm32f10x_exti.h>
 #include <stm32f10x_rcc.h>
-#include <../inc/sysBase/gpio.h>
-#include <../inc/sysBase/iwdg.h>
-#include <../inc/sysBase/utility_timer.h>
+#include <sysBase/gpio.h>
+#include <sysBase/iwdg.h>
+#include <sysBase/utility_timer.h>
 
 
 

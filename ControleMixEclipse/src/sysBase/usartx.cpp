@@ -25,7 +25,7 @@
 #include <stm32f10x_rcc.h>
 #include <stm32f10x_usart.h>
 #include <stdint.h>
-#include <../inc/sysBase/usartx.h>
+#include <sysBase/usartx.h>
 
 
 
@@ -48,27 +48,32 @@ void makeBff(USART_TypeDef* USARTx, uint8_t bf);					// capturar buffer
  * configura e inicia a porta serial em modo assincrono com a velocidade
  * BaudRate, os pinos são configurados altomaticamente por essa função
  * dispensando configurações adicionaes.
+ * RemapPin -> true GPIOB6 e GPIOB7 TX/RX
+ * RemapPin -> false GPIOA9 e GPIOA10 TX/RX
 ********************************************************************************/
-void usart1_Setup(uint32_t BaudRate){
+void usart1_Setup(uint32_t BaudRate, bool RemapPin){
 	usart_CleanBFF(BFF1);
 	/**** Enable peripheral clocks for USARTx on GPIOB ****/
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1,	ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,	ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO,	ENABLE);
-	GPIO_PinRemapConfig(GPIO_Remap_USART1,		ENABLE);
+
+	if(RemapPin){
+		GPIO_PinRemapConfig(GPIO_Remap_USART1,	ENABLE);
+	}
 
 	/* Configure PB7 and PB6 as USART1 TX/RX */
 	/* PB6 = alternate function push/pull output */
 
 	GPIO_InitTypeDef gpio;
-	gpio.GPIO_Pin			= GPIO_Pin_6;				// TX pin
+	gpio.GPIO_Pin			= RemapPin?GPIO_Pin_6:GPIO_Pin_9;	// TX pin
 	gpio.GPIO_Speed			= GPIO_Speed_50MHz;			// speed pin
 	gpio.GPIO_Mode			= GPIO_Mode_AF_PP;			// push up
-	GPIO_Init(GPIOB, &gpio);
+	GPIO_Init(GPIOA, &gpio);
 	/* PB7 = floating input */
-	gpio.GPIO_Pin			= GPIO_Pin_7;				// RX pin
+	gpio.GPIO_Pin			= RemapPin?GPIO_Pin_7:GPIO_Pin_10;	// RX pin
 	gpio.GPIO_Mode			= GPIO_Mode_IN_FLOATING;		// ploating point
-	GPIO_Init(GPIOB, &gpio);
+	GPIO_Init((RemapPin?GPIOB:GPIOA), &gpio);
 
 	/* Configure and initialize usart... */
 	USART_InitTypeDef usart;

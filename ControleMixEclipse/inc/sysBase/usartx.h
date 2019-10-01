@@ -27,7 +27,7 @@ typedef struct{						// tipo buffer para operar con toras as usart em um unico p
 
 
 // controle dos perifericos
-void usart1_Setup(uint32_t BaudRate);
+void usart1_Setup(uint32_t BaudRate, bool RemapPin);
 void usart2_Setup(uint32_t BaudRate);
 void usart3_Setup(uint32_t BaudRate);
 

@@ -8,7 +8,7 @@
 
 
 #include <stm32f10x_iwdg.h>
-#include <../inc/sysBase/iwdg.h>
+#include <sysBase/iwdg.h>
 
 
 /* Private macro -------------------------------------------------------------*/

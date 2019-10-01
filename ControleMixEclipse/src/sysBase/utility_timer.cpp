@@ -1,6 +1,8 @@
 //#include <dtmf.h>
 
-#include <../inc/sysBase/utility_timer.h>
+#include <core/gpioino.h>
+#include <core/chMix.h>
+#include <sysBase/utility_timer.h>
 #include <misc.h>
 #include <stdint-gcc.h>
 #include <stm32f10x.h>
@@ -10,7 +12,6 @@
 #include <stm32f10x_rtc.h>
 #include <stm32f10x_tim.h>
 #include <system_stm32f10x.h>
-
 
 
 
@@ -151,11 +152,12 @@ void disable_timer_delay(void){
 **************************************************************************/
 extern "C" {
 	void SysTick_Handler(void) {
-		__NOP();
+		loopListenCH();
 	}
 
 	void TIM2_IRQHandler(void) {
 		ticksCont++;
+		adcReadloop();
 		TIM_ClearITPendingBit(TIM_DELAY, TIM_IT_Update);
 	}
 }

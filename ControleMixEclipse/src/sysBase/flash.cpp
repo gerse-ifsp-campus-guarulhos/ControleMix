@@ -1,5 +1,5 @@
-#include <../inc/sysBase/flash.h>
-#include <../inc/sysBase/utility_timer.h>
+#include <sysBase/flash.h>
+#include <sysBase/utility_timer.h>
 #include <stdint-gcc.h>
 #include <stm32f10x.h>
 #include <stm32f10x_flash.h>

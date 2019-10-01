@@ -25,8 +25,7 @@ src/sysBase/usartx.o: ../src/sysBase/usartx.cpp \
  ../system/inc/stm32f1-stdperiph/stm32f10x_spi.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_tim.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_usart.h \
- ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
- ../inc/../inc/sysBase/usartx.h
+ ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h ../inc/sysBase/usartx.h
 
 ../system/inc/stm32f1-stdperiph/misc.h:
 
@@ -88,4 +87,4 @@ src/sysBase/usartx.o: ../src/sysBase/usartx.cpp \
 
 ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h:
 
-../inc/../inc/sysBase/usartx.h:
+../inc/sysBase/usartx.h:

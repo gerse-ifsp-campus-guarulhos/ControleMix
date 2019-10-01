@@ -6,7 +6,7 @@
  */
 
 
-#include <../inc/sysBase/adc.h>
+#include <sysBase/adc.h>
 #include <stm32f10x_adc.h>
 #include <stm32f10x_rcc.h>
 

@@ -1,9 +1,9 @@
 src/sysBase/utility_timer.o: ../src/sysBase/utility_timer.cpp \
- ../inc/../inc/sysBase/utility_timer.h \
- ../system/inc/stm32f1-stdperiph/misc.h ../system/inc/cmsis/stm32f10x.h \
- ../system/inc/cmsis/core_cm3.h ../system/inc/cmsis/core_cmInstr.h \
- ../system/inc/cmsis/cmsis_gcc.h ../system/inc/cmsis/core_cmFunc.h \
- ../system/inc/cmsis/system_stm32f10x.h \
+ ../inc/core/gpioino.h ../inc/core/protocol.h ../inc/core/chMix.h \
+ ../inc/sysBase/utility_timer.h ../system/inc/stm32f1-stdperiph/misc.h \
+ ../system/inc/cmsis/stm32f10x.h ../system/inc/cmsis/core_cm3.h \
+ ../system/inc/cmsis/core_cmInstr.h ../system/inc/cmsis/cmsis_gcc.h \
+ ../system/inc/cmsis/core_cmFunc.h ../system/inc/cmsis/system_stm32f10x.h \
  ../inc/../inc/sysBase/stm32f10x_conf.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_adc.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_bkp.h \
@@ -29,7 +29,13 @@ src/sysBase/utility_timer.o: ../src/sysBase/utility_timer.cpp \
  ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
  ../system/inc/cmsis/system_stm32f10x.h
 
-../inc/../inc/sysBase/utility_timer.h:
+../inc/core/gpioino.h:
+
+../inc/core/protocol.h:
+
+../inc/core/chMix.h:
+
+../inc/sysBase/utility_timer.h:
 
 ../system/inc/stm32f1-stdperiph/misc.h:
 

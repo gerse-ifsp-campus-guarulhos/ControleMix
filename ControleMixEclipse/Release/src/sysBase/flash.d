@@ -1,8 +1,8 @@
-src/sysBase/flash.o: ../src/sysBase/flash.cpp \
- ../inc/../inc/sysBase/flash.h ../inc/../inc/sysBase/utility_timer.h \
- ../system/inc/cmsis/stm32f10x.h ../system/inc/cmsis/core_cm3.h \
- ../system/inc/cmsis/core_cmInstr.h ../system/inc/cmsis/cmsis_gcc.h \
- ../system/inc/cmsis/core_cmFunc.h ../system/inc/cmsis/system_stm32f10x.h \
+src/sysBase/flash.o: ../src/sysBase/flash.cpp ../inc/sysBase/flash.h \
+ ../inc/sysBase/utility_timer.h ../system/inc/cmsis/stm32f10x.h \
+ ../system/inc/cmsis/core_cm3.h ../system/inc/cmsis/core_cmInstr.h \
+ ../system/inc/cmsis/cmsis_gcc.h ../system/inc/cmsis/core_cmFunc.h \
+ ../system/inc/cmsis/system_stm32f10x.h \
  ../inc/../inc/sysBase/stm32f10x_conf.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_adc.h \
  ../system/inc/stm32f1-stdperiph/stm32f10x_bkp.h \
@@ -28,9 +28,9 @@ src/sysBase/flash.o: ../src/sysBase/flash.cpp \
  ../system/inc/stm32f1-stdperiph/stm32f10x_wwdg.h \
  ../system/inc/stm32f1-stdperiph/misc.h
 
-../inc/../inc/sysBase/flash.h:
+../inc/sysBase/flash.h:
 
-../inc/../inc/sysBase/utility_timer.h:
+../inc/sysBase/utility_timer.h:
 
 ../system/inc/cmsis/stm32f10x.h:
 

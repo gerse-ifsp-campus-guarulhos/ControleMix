@@ -152,7 +152,7 @@ PB4
 Text Label 4950 5800 0    50   ~ 0
 PB3
 Text Label 4950 5900 0    50   ~ 0
-PB15
+PA15
 Wire Wire Line
 	4950 5900 4650 5900
 Wire Wire Line
@@ -1184,7 +1184,7 @@ CH6
 Wire Wire Line
 	3000 2650 3000 2550
 Text Label 10250 2750 0    50   ~ 0
-PB15
+PA15
 Text Label 10250 2650 0    50   ~ 0
 PB3
 Text Label 10250 2550 0    50   ~ 0
